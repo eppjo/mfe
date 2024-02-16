@@ -6,7 +6,7 @@ import App from './App';
 // mount function to start up the app
 const mount = (el) => {
     ReactDOM.render(
-        <App />,
+        <App/>,
         el
     )
     ;
