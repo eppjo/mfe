@@ -1,12 +1,12 @@
-import React, {useRef, useEffect} from 'react';
-import {mount as marketingMount} from 'marketing/MarketingApp';
+import { mount } from 'marketing/MarketingApp';
+import React, { useRef, useEffect } from 'react';
 
 export default () => {
-    const ref = useRef(null);
+  const ref = useRef(null);
 
-    useEffect(() => {
-        marketingMount(ref.current);
-    });
+  useEffect(() => {
+    mount(ref.current);
+  });
 
-    return <div ref={ref}></div>
+  return <div ref={ref} />;
 };
